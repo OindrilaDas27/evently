@@ -1,0 +1,32 @@
+.navbar {
+    height: 4rem;
+    background-color: #fff;
+}
+
+.contents {
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heading {
+    color: #f05537;
+    font-weight: bold;
+}
+
+.links{
+    display: flex;
+    flex-direction: row;
+}
+
+a {
+    padding: 0 0 0 2rem;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #111;
+}
