@@ -24,3 +24,34 @@
     color: #fff;
     cursor: pointer;
 }
+
+.category {
+    padding: 2rem;
+}
+
+.header {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.category-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 1rem;
+    overflow-x: scroll;
+}
+
+.category-content {
+    width: 10rem;
+    padding: 0 1rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: gray;
+    cursor: pointer;
+}
+
+.category-content:hover {
+    color: #111;
+    font-weight: 600;
+}

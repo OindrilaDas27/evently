@@ -10,23 +10,30 @@
     flex-wrap: wrap;
     align-content: center;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .heading {
     color: #f05537;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
 .links{
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 a {
-    padding: 0 0 0 2rem;
+    height: 1.5rem;
+    padding: 1.2rem 1rem;
     text-decoration: none;
     font-size: 1rem;
-    font-weight: bold;
+    font-weight: 500;
     color: #111;
+}
+
+a:hover {
+    background-color: rgb(245, 245, 245);
 }

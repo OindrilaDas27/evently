@@ -6,11 +6,11 @@ const Navbar = () => {
   return (
     <div className='navbar'>
         <div className='contents'>
-            <h2 className='heading'>eventbrite</h2>
+            <Link to='/' className='heading'>eventbrite</Link>
             <div className='links'>
-            <Link style={{ color: '#3d64ff'}}>Create an event</Link>
-            <Link>Log In</Link>
-            <Link>Sign Up</Link>
+            <Link style={{ color: '#3d64ff'}} to='/createvent'>Create an event</Link>
+            <Link to='/login'>Log In</Link>
+            <Link to='/signup'>Sign Up</Link>
             </div>
         </div>
     </div>
