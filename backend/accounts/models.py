@@ -1,11 +1,18 @@
 from django.db import models
 
 # Create your models here.
-from django.contrib.auth.models import AbstractBaseUser, BaseUserManager, PermissionMixin, BaseUserManager
+from django.contrib.auth.models import AbstractUser
+from .manager import UserManager
 
-class userAccount(AbstractBaseUser, PermissionMixin):
-    email = models.EmailField(max_length=255, unique=True)
-    is_active = models.BooleanField(default=True)
-    is_staff = models.BooleanFied(default=False)
+class User(AbstractUser):
+
+    email = models.EmailField(unique=True)
+    email_token = models.CharField(max_length=100, null=True, blank=True)
+    forget_password = models.CharField(max_length=100, null=True, blank=True)
+    is_verified = models.BooleanField(default=False) 
+
+    objects = UserManager()
 
     USERNAME_FIELD = 'email'
+
+    REQUIRED_FIELDS = []
