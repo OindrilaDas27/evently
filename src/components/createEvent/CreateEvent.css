@@ -1,6 +1,9 @@
+@import url("https://cdn.syncfusion.com/ej2/material.css");
+
 .event {
     height: 100%;
-    width: 80%;
+    width: 40%;
+    margin: 0 0 0 25%;
     padding: 3rem 6rem;
     display: flex;
     flex-direction: column;
@@ -8,7 +11,134 @@
 }
 
 .title {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 600;
     padding: 1rem 0;
+}
+
+.event-container {
+    padding: 1rem 0 0 0;
+}
+
+.event-title {
+    width: 100%;
+    height: 2rem;
+    margin: 0.3rem 0;
+    padding: 1rem 0.7rem;
+    border-color: rgb(255, 8, 8);
+}
+
+.event-title:focus{
+    outline-color: rgb(255, 8, 8);
+}
+
+.event-org {
+    width: 100%;
+    height: 3rem;
+    padding: 1rem 0.7rem;
+    margin: 0.3rem 0;
+}
+
+.event-org, .event-desc:focus {
+    outline-color: blue;
+}
+
+.event-location, .event-description, .event-date-time, .event-image {
+    display: flex;
+    flex-direction: column;
+}
+
+.event-desc {
+    width: 100%;
+    height: 8rem;
+    margin: 0.5rem 0;
+    padding: 1rem;
+}
+
+.venue-label {
+    padding: 1rem 0 0.3rem 0;
+    font-weight: 500;
+}
+
+.location {
+  padding: 1rem 0.7rem;
+}
+
+.date-time {
+    display: flex;
+    flex-direction: row;
+    /* flex-wrap: wrap; */
+}
+
+.date {
+    width: 50%;
+}
+
+.time {
+    width: 50%;
+    margin: 0 0 0 10%;
+}
+
+.datepicker {
+    height: 2.5rem;
+    width: 90%;
+    margin: 0.7rem 0;
+    font-size: 1rem;
+    padding: 0 0 0 0.5rem;
+}
+
+.datepicker:focus {
+    outline-color: blue;
+}
+
+.react-datepicker{
+    width: 120% !important;
+    height: 150% !important;
+}
+
+.react-datepicker__month-container{
+    width: 100% !important;
+    height: 150% !important;
+    font-size: 1rem;
+}
+
+.datepicker__current-month {
+    font-size: 2rem !important;
+}
+
+.datepicker__day-names {
+    margin: 1rem 0 0 0 !important;
+}
+
+.datepicker__day-name {
+    margin: 1rem !important;
+}
+
+.react-datepicker__week {
+    color: grey !important;
+    padding: 0.5rem 0;
+}
+
+.react-datepicker__day {
+    color: #353535 !important;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+    font-weight: 600;
+}
+
+.e-textarea-group {
+    margin: 0.7rem 0;
+    padding: 0.4rem;
+    border-width: 1px !important;
+}
+
+.e-textarea-group.e-control-wrapper:not(.e-float-icon-left):not(.e-float-textarea)::before {
+    background: blue !important;
+}
+
+.e-textarea-group.e-control-wrapper:not(.e-float-icon-left):not(.e-float-textarea)::after {
+    background: blue !important;
+}
+
+.e-textarea-group .e-textarea-group-icon, .e-active{
+    color: blue !important;
 }
