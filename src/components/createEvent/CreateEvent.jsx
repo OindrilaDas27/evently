@@ -4,7 +4,7 @@ import "./CreateEvent.css";
 import DatePicker from 'react-datepicker';
 import { TimePickerComponent } from "@syncfusion/ej2-react-calendars";
 import 'react-datepicker/dist/react-datepicker.css';
-import DropBox from "../imageDropBox/DropBox";
+// import DropBox from "../imageDropBox/DropBox";
 
 const CreateEvent = () => {
   const [selectedStartDate, setSelectedStartDate] = useState(null)
@@ -112,7 +112,7 @@ const CreateEvent = () => {
               Add photos to show what your event will be about.
               </span>
               <div>
-                <DropBox />
+                {/* <DropBox /> */}
               </div>
             </div>
           </div>
